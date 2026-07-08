@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sofi Bingo</title>
+<style>
+body{
+  font-family: Arial, sans-serif;
+  text-align:center;
+  background:#f2f2f2;
+}
+h1{
+  color:#e91e63;
+}
+.board{
+  display:grid;
+  grid-template-columns:repeat(5,60px);
+  gap:5px;
+  justify-content:center;
+}
+.cell{
+  background:white;
+  border:2px solid #333;
+  height:60px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:20px;
+  cursor:pointer;
+}
+.cell:hover{
+  background:#ffd54f;
+}
+</style>
+</head>
 
+<body>
+<h1>🎱 Sofi Bingo</h1>
+
+<div class="board">
+<script>
+for(let i=1;i<=25;i++){
+ document.write('<div class="cell">'+i+'</div>');
+}
+</script>
+</div>
+
+</body>
+</html>
